@@ -1,0 +1,7 @@
+services:
+  nginx-deploy:
+    image: registry.keepit-up.site/nginx-deploy:latest
+    container_name: nginx-deploy
+    ports:
+      - "80:80"
+    restart: unless-stopped
